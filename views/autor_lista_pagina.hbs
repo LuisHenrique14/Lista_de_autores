@@ -1,0 +1,15 @@
+<body>
+<h1>{{titulo}}</h1>
+<br/>
+<ul>
+    {{#if listaExiste}}
+    {{#each lista}}
+        <li>Nome Completo: {{this.primeiro_nome}} {{this.familia_nome}}</li>
+        <li>Data de Nascimento: {{this.data_de_nascimento}}</li> <br/>
+    {{/each}}
+    {{else}}
+        <li>Nome: {{lista.primeiro_nome}} {{lista.familia_nome}}</li>
+        <li>Data de Nascimento: {{lista.data_de_nascimento}}</li> <br/>
+    {{/if}}
+</ul>
+</body>
